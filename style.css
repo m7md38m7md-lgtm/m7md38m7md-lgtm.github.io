@@ -17,8 +17,6 @@
     --accent: #f2c94c;
     --link: #8ab4f8;
   }
-  .badge-dark { display: none; }
-  .badge-light { display: inline; }
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -45,4 +43,8 @@ code { font-size: 14px; background: var(--surface); border: 1px solid var(--line
 .badge { display: inline-block; margin-top: 8px; }
 .badge img { height: 56px; width: auto; }
 .badge-light { display: none; }
+@media (prefers-color-scheme: dark) {
+  .badge-dark { display: none; }
+  .badge-light { display: inline; }
+}
 footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 18px; }
